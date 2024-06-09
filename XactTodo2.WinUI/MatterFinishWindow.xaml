@@ -1,0 +1,35 @@
+﻿<Window xmlns:Components="clr-namespace:XactTodo.WinUI.Components"  x:Class="XactTodo.WinUI.MatterFinishWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XactTodo.WinUI"
+        mc:Ignorable="d"
+        Title="确认事项完成" Height="240" Width="320">
+    <Window.DataContext>
+        <local:MatterFinishViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <StackPanel Margin="10,10,10,10">
+            <StackPanel Margin="0,4,0,4" Orientation="Horizontal">
+                <TextBlock Text="事项主题："></TextBlock>
+                <TextBlock Text="{Binding MatterFinishInfo.Subject}"/>
+            </StackPanel>
+            <StackPanel Margin="0,4,0,4" Orientation="Horizontal">
+                <TextBlock Text="完成时间："/>
+                <DatePicker SelectedDate="{Binding MatterFinishInfo.FinishTime}" />
+                <Components:NumericBox x:Name="numHour" Value="{Binding MatterFinishInfo.HourOfFinishTime}" Format="00" Maximum="23" Margin="4,0,4,0" Width="24" TextAlignment="Right" VerticalContentAlignment="Center" />
+                <TextBlock Text=":" VerticalAlignment="Center"/>
+                <Components:NumericBox x:Name="numMinute" Value="{Binding MatterFinishInfo.MinuteOfFinishTime}" Format="00" Maximum="59" Margin="4,0,4,0" Width="24" TextAlignment="Right" VerticalContentAlignment="Center" />
+            </StackPanel>
+            <StackPanel Margin="0,4,0,4">
+                <TextBlock Text="补充说明："></TextBlock>
+                <TextBox TextWrapping="Wrap" MaxHeight="0" MinHeight="60" />
+            </StackPanel>
+        <StackPanel Margin="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="btnOkay" Content="确定" Width="75" Margin="2" Click="btnOkay_Click"/>
+            <Button x:Name="btnCancel" Content="取消" Width="75" Margin="2" Click="btnCancel_Click"/>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

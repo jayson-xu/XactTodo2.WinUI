@@ -1,0 +1,107 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>XactTodo.WinUI</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Utils\RelayCommand.cs" />
+    <Compile Remove="Utils\ValueTextPair.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Res\Images\About.png" />
+    <None Remove="Res\Images\background.png" />
+    <None Remove="Res\Images\cancel_16px.png" />
+    <None Remove="Res\Images\Close.png" />
+    <None Remove="Res\Images\Comments_16px_521455.png" />
+    <None Remove="Res\Images\comment_12px.png" />
+    <None Remove="Res\Images\comment_16px.png" />
+    <None Remove="Res\Images\Evolvements.png" />
+    <None Remove="Res\Images\glass.png" />
+    <None Remove="Res\Images\link_16px_1068427_easyicon.net.png" />
+    <None Remove="Res\Images\link_16px_1100843_easyicon.net.png" />
+    <None Remove="Res\Images\lock.png" />
+    <None Remove="Res\Images\more_16px_h.png" />
+    <None Remove="Res\Images\more_16px_v.png" />
+    <None Remove="Res\Images\Refresh.png" />
+    <None Remove="Res\Images\relation.png" />
+    <None Remove="Res\Images\Settings.png" />
+    <None Remove="Res\Images\Settings1.png" />
+    <None Remove="Res\Images\Settings2.png" />
+    <None Remove="Res\Images\Settings3.png" />
+    <None Remove="Res\Images\settings4.png" />
+    <None Remove="Res\Images\settings5.png" />
+    <None Remove="Res\Images\setting_16px.png" />
+    <None Remove="Res\Images\setting_16px_26740_easyicon.net.png" />
+    <None Remove="Res\Images\tags.png" />
+    <None Remove="Res\Images\Tick_16px.png" />
+    <None Remove="Res\Images\unlock.png" />
+    <None Remove="Res\Images\upload.png" />
+    <None Remove="Res\Images\Write.png" />
+    <None Remove="Res\Images\XactTodo.png" />
+    <None Remove="Res\Images\XactTodo2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Res\Images\About.png" />
+    <Resource Include="Res\Images\background.png" />
+    <Resource Include="Res\Images\cancel_16px.png" />
+    <Resource Include="Res\Images\Close.png" />
+    <Resource Include="Res\Images\Comments_16px_521455.png" />
+    <Resource Include="Res\Images\comment_12px.png" />
+    <Resource Include="Res\Images\comment_16px.png" />
+    <Resource Include="Res\Images\Evolvements.png" />
+    <Resource Include="Res\Images\glass.png" />
+    <Resource Include="Res\Images\link_16px_1068427_easyicon.net.png" />
+    <Resource Include="Res\Images\link_16px_1100843_easyicon.net.png" />
+    <Resource Include="Res\Images\lock.png" />
+    <Resource Include="Res\Images\more_16px_h.png" />
+    <Resource Include="Res\Images\more_16px_v.png" />
+    <Resource Include="Res\Images\Refresh.png" />
+    <Resource Include="Res\Images\relation.png" />
+    <Resource Include="Res\Images\Settings.png" />
+    <Resource Include="Res\Images\Settings1.png" />
+    <Resource Include="Res\Images\Settings2.png" />
+    <Resource Include="Res\Images\Settings3.png" />
+    <Resource Include="Res\Images\settings4.png" />
+    <Resource Include="Res\Images\settings5.png" />
+    <Resource Include="Res\Images\setting_16px.png" />
+    <Resource Include="Res\Images\setting_16px_26740_easyicon.net.png" />
+    <Resource Include="Res\Images\tags.png" />
+    <Resource Include="Res\Images\Tick_16px.png" />
+    <Resource Include="Res\Images\unlock.png" />
+    <Resource Include="Res\Images\upload.png" />
+    <Resource Include="Res\Images\Write.png" />
+    <Resource Include="Res\Images\XactTodo.png" />
+    <Resource Include="Res\Images\XactTodo2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AppSettings.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Res\Themes\ButtonStyles.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Update="Res\Themes\Images.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+</Project>

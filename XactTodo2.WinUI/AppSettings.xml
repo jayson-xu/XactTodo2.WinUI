@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<appSettings>
+  <add key="RootUrl_Api" value="http://localhost:50666" />
+  <add key="UserName" value="Jayson" />
+  <add key="Password" value=""/>
+</appSettings>

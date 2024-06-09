@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<BitmapImage UriSource="../Images/Close.png"
+				 x:Key="Image.Close" />
+
+	<BitmapImage UriSource="../Images/Settings.png"
+				 x:Key="Image.Settings" />
+
+	<BitmapImage UriSource="../Images/Write.png"
+				 x:Key="Image.Write" />
+
+	<BitmapImage UriSource="../Images/Refresh.png"
+				 x:Key="Image.Refresh" />
+
+	<BitmapImage UriSource="../Images/About.png"
+				 x:Key="Image.About" />
+	
+	<BitmapImage UriSource="../Images/XactTodo.png"
+				 x:Key="Image.AppTitle" />
+    
+	<BitmapImage UriSource="../Images/Tick_16px.png"
+				 x:Key="Image.Tick" />
+    
+	<BitmapImage UriSource="../Images/upload.png"
+				 x:Key="Image.Upload" />
+
+    <BitmapImage UriSource="../Images/Evolvements.png"
+				 x:Key="Image.Evolvements" />
+    <BitmapImage UriSource="../Images/Relation.png"
+				 x:Key="Image.Relation" />
+    <BitmapImage UriSource="../Images/Tags.png"
+				 x:Key="Image.Tags" />
+    <BitmapImage UriSource="../Images/lock.png"
+				 x:Key="Image.Lock" />
+    <BitmapImage UriSource="../Images/unlock.png"
+				 x:Key="Image.Unlock" />
+</ResourceDictionary>
